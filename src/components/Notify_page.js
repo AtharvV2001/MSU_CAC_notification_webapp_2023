@@ -4,10 +4,10 @@ import Notification from "./Notification";
 const Notify_page = () => {
     return (
         <main>
-            <div class="title">
+            <div className="title">
                 <h2>Notification</h2>
             </div>
-            <div class="new">
+            <div className="new">
                 <h3>New</h3>
             </div>
             <Notification />
