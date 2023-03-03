@@ -25,6 +25,10 @@ const Notify_page = () => {
             <div className="title">
                 <h2>Notification</h2>
             </div>
+            <div className="readall">
+                <button class="fgbtn readallbtn">Read All</button>
+
+            </div>
             <div className="new">
                 <h3>New</h3>
             </div>

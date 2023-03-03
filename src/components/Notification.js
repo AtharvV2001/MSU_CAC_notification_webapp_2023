@@ -1,15 +1,6 @@
 import React from "react";
 
-const Notification = ({
-    id,
-    userName,
-    date,
-    userImg,
-    postImg,
-    text,
-    isRead,
-    type,
-}) => {
+const Notification = ({ userName, userImg, text, postImg }) => {
     return (
         <div className="tnotification1">
             <div className="user1">
@@ -28,9 +19,12 @@ const Notification = ({
                 </div>
             </div>
 
-            <div className="post1">
+            {postImg == false ? <div class="post1">
+                <button class="fbtn">Follow</button>
+            </div> : <div className="post1">
                 <img src={postImg} alt="" width="55px" />
-            </div>
+            </div>}
+
         </div>
     );
 }

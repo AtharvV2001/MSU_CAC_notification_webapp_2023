@@ -1,40 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid rgb(141, 141, 141); */
 }
 
-body{
+body {
     background: #000;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main{
+main {
     max-width: 630px;
     min-width: none;
     /* background: #090808; */
     height: 100vh;
     margin: auto;
-    padding: 2em;
+    padding: 2em 0;
     box-sizing: border-box;
     border-right: 1px solid rgb(76, 76, 76);
     border-left: 1px solid rgb(76, 76, 76);
     overflow: auto;
 }
 
-.title{
+.title {
     font-size: 1.2em;
-    
-}
-.new{
-    margin-top: 20px;
-    font-size: 1.1rem;
+    padding: 0 1.5em;
+
 }
 
-.tnotification1{
+.new {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5em;
+}
+
+.tnotification1 {
     /* margin-top: 2em; */
     height: 15vh;
     display: flex;
@@ -42,64 +46,134 @@ main{
     align-items: center;
     border-bottom: 1px solid rgb(76, 76, 76);
     /* background: #1e1e1e; */
-    
+    padding: 0 1.5em;
+
 }
-.user1{
-    
+
+.tnotification1:hover{
+    background: #121212;
+    cursor: pointer;
+}
+
+.user1 {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.userprofile1 img{
+
+.userprofile1 img {
     background: #9f0000;
     border-radius: 50%;
+    object-fit: cover;
+    height: 45px;
 }
 
-.usertext{
+.post1{
+    z-index: 2;
+}
+
+.post1 img{
+    object-fit: cover;
+    height: 45px;
+}
+
+.usertext {
     margin-left: 15px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
-.usertext div{
+.usertext div {
     margin-left: 0.3vw;
 }
 
-.todaytitle{
+.todaytitle {
+    padding: 0 1.5em;
     margin-top: 1.5em;
     margin-bottom: 1em;
     font-size: 1.1rem;
+    z-index: -1;
 }
-.tnotification2,
-.tnotification3,
-.tnotification4,
-.tnotification5
-{
+
+.tnotification2{
     /* margin-top: 1em; */
     height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.5em;
+
     /* border-bottom: 1px solid rgb(76, 76, 76); */
-    /* background: #1e1e1e; */
-    
+    z-index: -1;
 }
-.today{
+.tnotification2:hover{
+    background: #121212;
+}
+
+
+.today {
     border-bottom: 1px solid rgb(76, 76, 76);
 }
-.tnotification5{
+
+.tnotification5 {
     margin-bottom: 10px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 12px;
 }
 
-main::-webkit-scrollbar-thumb{
-    background: rgb(104,104,104);
+main::-webkit-scrollbar-thumb {
+    background: rgb(104, 104, 104);
 }
-main::-webkit-scrollbar-track{
-    background: rgb(66,66,66);
+
+main::-webkit-scrollbar-track {
+    background: rgb(66, 66, 66);
 }
+
+/* ---------- follow button ------------ */
+.fbtn {
+    background: rgb(0, 149, 246);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+    
+}
+
+.fgbtn{
+    background: rgb(239,239,239);
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+}
+.readall{
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    
+}
+
+.readallbtn:hover,.fbtn:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* ---------- follow button ------------ */
