@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='main_page'>
 
-      <Notify_page />
+      <Notify_page />helllo world
     </div>
   );
 }
