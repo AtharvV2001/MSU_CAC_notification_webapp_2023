@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Notification from "./Notification";
-import { collection, getDocs, Timestamp } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { useEffect } from "react";
 import { firebaseDB } from "../firebase/firebase";
 
-const Notify_page = () => {
+const NotifyPage = () => {
   const [notifyList, setNotifyList] = useState([]);
   const [readlist, setReadlist] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -108,4 +108,4 @@ const Notify_page = () => {
   );
 };
 
-export default Notify_page;
+export default NotifyPage;

@@ -1,10 +1,10 @@
 import "./App.css";
-import Notify_page from "./components/Notify_page";
+import NotifyPage from "./components/Notify_page";
 
 function App() {
   return (
     <div className="main_page">
-      <Notify_page />
+      <NotifyPage />
     </div>
   );
 }
