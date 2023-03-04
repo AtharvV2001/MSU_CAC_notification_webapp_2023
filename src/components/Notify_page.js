@@ -42,6 +42,7 @@ const NotifyPage = () => {
     setNotifyList(list);
     setIsLoading(false);
   };
+  console.log(readlist);
 
   return (
     <main>
@@ -75,6 +76,7 @@ const NotifyPage = () => {
                   postImg={notify.notifyPostImage}
                   text={notify.notifyText}
                   isRead={notify.readFlag}
+                  isFollowing={notify.isFollowing}
                   type={notify.notifyType}
                   handleClick={setRead}
                 />
@@ -96,6 +98,7 @@ const NotifyPage = () => {
                   postImg={notify.notifyPostImage}
                   text={notify.notifyText}
                   isRead={notify.readFlag}
+                  isFollowing={notify.isFollowing}
                   type={notify.notifyType}
                   handleClick={setRead}
                 />

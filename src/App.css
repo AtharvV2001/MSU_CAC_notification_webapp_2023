@@ -42,8 +42,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  /* border-bottom: 1px solid rgb(76, 76, 76); */
-  /* background: #1e1e1e; */
+  min-height: 59px;
   padding: 1em 1.5em;
 }
 .unread {
@@ -57,7 +56,7 @@ main {
 
 .userImg {
   width: 44px;
-  height: 44px;
+  height: 44px !important;
   object-fit: cover;
 }
 
@@ -120,12 +119,6 @@ main::-webkit-scrollbar-track {
   background: rgb(66, 66, 66);
 }
 
-@media (max-width: 650px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 /* ---------- follow button ------------ */
 .fbtn {
   background: rgb(0, 149, 246);
@@ -139,6 +132,9 @@ main::-webkit-scrollbar-track {
   font-size: 13px;
   border: none;
 }
+.fbtn:hover {
+  background-color: rgb(24, 119, 242);
+}
 
 .fgbtn {
   background: rgb(239, 239, 239);
@@ -151,6 +147,9 @@ main::-webkit-scrollbar-track {
   display: inline-block;
   font-size: 13px;
   border: none;
+}
+.fgbtn:hover {
+  background-color: rgb(219, 219, 219);
 }
 .readall {
   padding: 0 1.5em;
@@ -221,3 +220,36 @@ main::-webkit-scrollbar-track {
 }
 
 /* ----------- Loader CSS -------------- */
+
+/* ------------- Media --------------- */
+
+@media (max-width: 650px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .username1 {
+    font-size: 14px;
+  }
+  .userImg {
+    width: 40px;
+    height: 40px !important;
+  }
+  .postImg {
+    width: 50px;
+    height: 50px;
+  }
+  .fbtn {
+    padding: 6px 20px;
+  }
+  .fgbtn {
+    padding: 6px 20px;
+  }
+  .new h3 {
+    font-size: 18px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+}
+
+/* ------------- Media --------------- */

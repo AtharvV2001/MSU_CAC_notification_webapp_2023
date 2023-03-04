@@ -14,6 +14,7 @@ const Notification = ({
   isRead,
   type,
   handleClick,
+  isFollowing
 }) => {
   const timeAgo = new TimeAgo("en-US");
   return (
@@ -36,7 +37,7 @@ const Notification = ({
 
       {type === "follow" ? (
         <div className="post1">
-          <button className="fbtn">Follow</button>
+          <button className={isFollowing ? "fgbtn" : "fbtn"}>{isFollowing ? "Following" : "Follow"}</button>
         </div>
       ) : (
         <div className="post1">
