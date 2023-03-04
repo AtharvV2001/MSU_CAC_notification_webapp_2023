@@ -130,6 +130,7 @@ main::-webkit-scrollbar-track {
   display: inline-block;
   font-size: 13px;
   border: none;
+  cursor: pointer;
 }
 .fbtn:hover {
   background-color: rgb(24, 119, 242);
@@ -146,6 +147,7 @@ main::-webkit-scrollbar-track {
   display: inline-block;
   font-size: 13px;
   border: none;
+  cursor: pointer;
 }
 .fgbtn:hover {
   background-color: rgb(219, 219, 219);

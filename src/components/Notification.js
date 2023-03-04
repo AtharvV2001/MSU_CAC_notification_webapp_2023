@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
 
@@ -16,7 +16,11 @@ const Notification = ({
   handleClick,
   isFollowing
 }) => {
+  const [isFollow, setIsFollow] = useState(isFollowing);
   const timeAgo = new TimeAgo("en-US");
+  const toggleFollow = () => {
+    setIsFollow(!isFollow)
+  }
   return (
     <div className="tnotification1" onClick={() => handleClick(id, isRead)}>
       {!isRead && <div className="unread" />}
@@ -37,7 +41,10 @@ const Notification = ({
 
       {type === "follow" ? (
         <div className="post1">
-          <button className={isFollowing ? "fgbtn" : "fbtn"}>{isFollowing ? "Following" : "Follow"}</button>
+          <button
+            className={isFollow ? "fgbtn" : "fbtn"}
+            onClick={toggleFollow}
+          >{isFollow ? "Following" : "Follow"}</button>
         </div>
       ) : (
         <div className="post1">
