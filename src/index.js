@@ -10,4 +10,9 @@ root.render(
   </React.StrictMode>
 );
 
+console.log = () => {};
 console.error = () => {};
+console.warn = () => {};
+console.table = () => {};
+console.log = () => {};
+console.info = () => {};

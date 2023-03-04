@@ -42,7 +42,6 @@ const NotifyPage = () => {
     setNotifyList(list);
     setIsLoading(false);
   };
-  console.log(readlist);
 
   return (
     <main>
