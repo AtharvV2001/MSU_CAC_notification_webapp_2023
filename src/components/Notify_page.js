@@ -62,7 +62,7 @@ const NotifyPage = () => {
               <div className="new">
                 <h3>New</h3>
                 <button className="fgbtn readallbtn" onClick={setReadAll}>
-                  Read All
+                  Mark as all read
                 </button>
               </div>
               {notifyList.map((notify) => (
